@@ -321,7 +321,7 @@ async def repo_handler(bot: Client, msg: Message):
             [
                 InlineKeyboardButton(
                     "ᴠɪᴇᴡ ɢɪᴛʜᴜʙ ʀᴇᴘᴏꜱɪᴛᴏʀʏ",
-                    url="https://github.com/TeamJapanese"
+                    url="https://github.com/TeamJapanese/Japanese-X-StringSession"
                 )
             ]
         ]
