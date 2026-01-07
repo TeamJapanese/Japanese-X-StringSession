@@ -1,16 +1,27 @@
 version: 2
+
 updates:
-- package-ecosystem: pip
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "00:00"
-    timezone: "Asia/Kolkata"
-  labels:
-    - "dependencies"
-  open-pull-requests-limit: 50
-  ignore:
-    - dependency-name: "python-telegram-bot"
-    # Ignoring all ptb updates
-    - dependency-name: "sqlalchemy"
-    # Ignoring all sqlalchemy updates
+  - package-ecosystem: "pip"
+    directory: "/"
+
+    schedule:
+      interval: "daily"
+      time: "00:00"
+      timezone: "Asia/Kolkata"
+
+    # Allow large number of PRs
+    open-pull-requests-limit: 50
+
+    labels:
+      - "dependencies"
+      - "automated"
+      - "daily"
+      - "mass-update"
+
+    # No grouping → separate PR per dependency
+    # This is REQUIRED to reach 50+ PRs/day
+
+    ignore:
+      # Known breaking libraries
+      - dependency-name: "python-telegram-bot"
+      - dependency-name: "sqlalchemy"
