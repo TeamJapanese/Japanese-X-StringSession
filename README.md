@@ -2,6 +2,8 @@
   𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆 𝑿 𝑺𝒕𝒓𝒊𝒏𝒈 𝑺𝒆𝒔𝒔𝒊𝒐𝒏
 </h2>
 
+![TeamJapanese](https://github.com/user-attachments/assets/694ac9f6-c7d2-4be1-9812-52cc426fefd2)
+
 
 <p align="center">
 <b>
@@ -18,10 +20,16 @@
 <a href="https://github.com/TeamJapanese/Japanese-X-StringSession/stargazers"><img src="https://img.shields.io/github/stars/TeamJapanese/Japanese-X-StringSession?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars"/></a>
 <a href="https://github.com/TeamJapanese/Japanese-X-StringSession/network/members"> <img src="https://img.shields.io/github/forks/TeamJapanese/Japanese-X-StringSession?color=black&logo=github&logoColor=black&style=for-the-badge"/></a>
 <a href="https://github.com/TeamJapanese/Japanese-X-StringSession/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License"/></a>
+  <a href="https://github.com/nobitaaaxd/Team-Japanese/Japanese-X-Userbot/commits/itzsandeepshrma"> <img src="https://img.shields.io/github/last-commit/TeamJapanese/Japanese-X-StringSession?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://www.python.org/">
   <img src="https://img.shields.io/badge/Written%20in-Python-blue?style=for-the-badge&logo=python" alt="Python"/>
 </a>
 </p>
+
+
+
+
+
 
 ## What is Japanese X String Session?
 
@@ -74,7 +82,7 @@ This project:
 This is not a tool designed to “just work once”.  
 It is designed to **work correctly, consistently, and safely over time**.
 
-Built by **[sᴧɴᴅᴇᴇᴘ sʜᴧʀᴍᴧ](https://github.com/itzsandeepshrma)** , **for developers**, with production reality in mind.
+Built by **[sᴧɴᴅᴇᴇᴘ sʜᴧʀᴍᴧ](https://github.com/itzsandeepshrma)** **for developers**, with production reality in mind.
 
 ---
 
@@ -92,14 +100,29 @@ Built by **[sᴧɴᴅᴇᴇᴘ sʜᴧʀᴍᴧ](https://github.com/itzsandeepshrm
 
 ### Deployment Options
 
-Japanese X String Session is designed to be **platform-agnostic** and can be deployed on **Render**, **Heroku**, or **VPS/Localhost** with equal stability.
+<p align="center"> <a href="https://render.com"><img src="https://img.shields.io/badge/Render-white?style=for-the-badge&logo=render&logoColor=black" /></a> <a href="#"><img src="https://img.shields.io/badge/VPS-Linux-black?style=for-the-badge&logo=linux" /></a> </p>
 
----
+
+### Deploy on Render 
+
+**Japanese X String Session** is fully optimized for **Render**, providing a clean, stable, and production-grade deployment experience.  
+Render handles infrastructure, restarts, and scaling automatically, allowing you to focus purely on development.
+
+This method is recommended for:
+- Long-running Telegram bots
+- Stable uptime with automatic restarts
+- Clean logs and monitoring
+- Hassle-free production deployment
+
+Follow the steps below carefully to deploy without issues.
 
 ## Render Deployment (Recommended)
 
-Japanese X String Session can be deployed easily on **Render** with a clean and stable setup.  
-Follow the steps below carefully.
+<p align="center">
+  <a href="https://render.com">
+    <img src="https://img.shields.io/badge/Deploy%20on%20Render-white?style=for-the-badge&logo=render&logoColor=black" />
+  </a>
+</p> 
 
 ---
 
@@ -124,23 +147,17 @@ Follow the steps below carefully.
 1. Go to **Environment** **[Add Environment Variables](https://github.com/TeamJapanese/Japanese-X-StringSession/blob/main/.env.sample)** and add the following:
 2. Make sure all values are correct and Incorrect or missing variables will cause the service to fail.
 
----
-
 ### Step 4 Deploy
 
 - Click **Create Web Service**
 - Render will install dependencies and start the bot automatically
 - Wait until the status shows **Live**
 
----
-
 ### Step 5 Bot Access
 
 - Once deployed successfully, your bot will be live on **[Telegram](
 http://telegram.dog/JapaneseXStringSessionbot?start=true)**
 
-
----
 
 ### Note
 
@@ -151,21 +168,111 @@ http://telegram.dog/JapaneseXStringSessionbot?start=true)**
 
 ---
 
+## VPS / Local Deployment (Manual Setup)
+
+If you prefer **full control**, you can deploy Japanese X String Session on your **VPS** or **local machine**.  
+This method gives **maximum stability, customizability, and 24/7 uptime**.
+
+---
+
+## VPS/ Local Host Deployment Steps :
+
+Update and upgrade your server:
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+
+### Install Python3 and pip
+
+sudo apt-get install python3 python3-pip -y
+sudo pip3 install --upgrade pip setuptools
+
+### Optional: Install tmux to run the bot in the background:
+
+sudo apt install tmux -y
+
+### Clone the Repository
+
+git clone https://github.com/TeamJapanese/Japanese-X-StringSession
+cd Japanese-X-String-Session
+
+### Install Dependencies
+
+pip3 install -r requirements.txt
+
+### Configure Environment Variables
+
+### For Normal Windwos VPS/Local Deployment
+
+API_ID=
+API_HASH=
+BOT_TOKEN=
+MONGO_URL=
+
+## For Linux Deployment
+
+export API_ID=
+export API_HASH=
+export BOT_TOKEN=
+export MONGO_URL=
+export ENV=
+
+### Run the Bot
+
+python3 -m Japanese
+
+### Optional : Run with tmux (keep running after logout)
+
+tmux
+python3 -m Japanese
+# Press Ctrl+b then d to detach
+
+### To reattach:
+
+tmux attach
+```
+
+### Note
+
+- Ensure Python version is compatible (3.10+ recommended)
+- VPS gives full uptime, unlike free dynos on Heroku
+- Secure your server (firewall, SSH keys, etc.)
+- MongoDB Atlas or local MongoDB can be used
+
+### When to Use VPS / Local
+
+- Full-time 24/7 uptime
+- Production-ready deployment
+- Maximum control and customizability
+- Large-scale userbots or advanced Telegram services
 
 
+## 🛡 Support & Updates
 
+Stay connected with **[ᴛᴇᴧᴍ ᴊᴧᴘᴧɴᴇsᴇ](https://github.com/TeamJapanese)** for help, updates, and announcements.  
 
+- **Channel :-** **[Team Japanese](https://t.me/TeamJapaneseOfficial)** 
+- **Supporrt :-** **[Team Japanese Support](https://t.me/TeamJapaneseSupport)**
 
+## License 
 
+**MIT License**
 
+**Copyright (c) 2026** **[TeamJapanese](https://github.com/TeamJapanese)**
 
+**Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:**
 
+**The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.**
 
-
-
-
-
-
-
-
-
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.**
