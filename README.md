@@ -28,7 +28,7 @@
 **Japanese X String Session** is far more than a traditional string session generator.  
 It is a **developer-grade Telegram authentication engine** designed for reliability, security, and long-term production use.
 
-Engineered and maintained by **[ᴛᴇᴧᴍ ᴊᴧᴘᴧɴᴇsᴇ](https://github.com/TeamJapanese)**, this project follows a clear philosophy:
+Engineered and maintained by **[ᴛᴇᴧᴍ ᴊᴧᴘᴧɴᴇsᴇ](https://github.com/TeamJapanese)** this project follows a clear philosophy:
 
 - Security is a **default**, not an afterthought  
 - Sensitive data is **never treated casually**  
@@ -74,7 +74,7 @@ This project:
 This is not a tool designed to “just work once”.  
 It is designed to **work correctly, consistently, and safely over time**.
 
-Built **by developers, for developers**, with production reality in mind.
+Built by **[sᴧɴᴅᴇᴇᴘ sʜᴧʀᴍᴧ](https://github.com/itzsandeepshrma)** , **for developers**, with production reality in mind.
 
 ---
 
@@ -90,7 +90,82 @@ Built **by developers, for developers**, with production reality in mind.
 
 ---
 
-## Project Layout (Clean & Intentional)
+### Deployment Options
 
-Every file and module in this repository exists for a reason.  
-The project structure is intentionally minimal, clearly separated, and easy to reason about — ensuring that developers can understand, modify, and deploy the system with confidence.
+Japanese X String Session is designed to be **platform-agnostic** and can be deployed on **Render**, **Heroku**, or **VPS/Localhost** with equal stability.
+
+---
+
+## Render Deployment (Recommended)
+
+Japanese X String Session can be deployed easily on **Render** with a clean and stable setup.  
+Follow the steps below carefully.
+
+---
+
+### Step 1 Create a New or Existing Account on Render
+
+1. Fork this **[Repository](https://github.com/TeamJapanese/Japanese-X-StringSession/fork)**
+2. Go to **[Render](https://render.com)**
+3. Create A **[New Account](https://dashboard.render.com/register)** or Use **[Existing Account](https://dashboard.render.com/login)**
+4. Create a **New Web Service**
+5. Connect your GitHub repository
+
+### Step 2 Repository Configuration
+
+1. Choose Your Forked **[Repository](https://github.com/TeamJapanese/Japanese-X-StringSession/fork)**
+2. Select **Branch** main
+3. Select **Root Directory** Optional (If you want to add root)
+4. Select **Build Command** ```$ pip install -r requirements.txt```
+5. Select **Command** ```$ python3 -m Japanese```
+
+### Step 3 Environment Variables
+
+1. Go to **Environment** **[Add Environment Variables](https://github.com/TeamJapanese/Japanese-X-StringSession/blob/main/.env.sample)** and add the following:
+2. Make sure all values are correct and Incorrect or missing variables will cause the service to fail.
+
+---
+
+### Step 4 Deploy
+
+- Click **Create Web Service**
+- Render will install dependencies and start the bot automatically
+- Wait until the status shows **Live**
+
+---
+
+### Step 5 Bot Access
+
+- Once deployed successfully, your bot will be live on **[Telegram](
+http://telegram.dog/JapaneseXStringSessionbot?start=true)**
+
+
+---
+
+### Note
+
+- No database is required for basic usage
+- Logs can be monitored directly from the Render dashboard
+- Free tier may sleep on inactivity; paid plans are recommended for production use
+- Render deployment provides a clean, scalable, and maintenance-free environment suitable for production workloads.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
