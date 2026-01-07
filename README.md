@@ -2,8 +2,6 @@
   𝑱𝒂𝒑𝒂𝒏𝒆𝒔𝒆 𝑿 𝑺𝒕𝒓𝒊𝒏𝒈 𝑺𝒆𝒔𝒔𝒊𝒐𝒏
 </h2>
 
-![3311](https://github.com/user-attachments/assets/ac1f655a-d97e-4014-9dd5-92da6bf635a8)
-
 
 <p align="center">
 <b>
