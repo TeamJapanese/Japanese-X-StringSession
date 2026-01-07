@@ -170,6 +170,8 @@ http://telegram.dog/JapaneseXStringSessionbot?start=true)**
 
 ## VPS / Local Deployment (Manual Setup)
 
+<p align="center"> <a href="#"><img src="https://img.shields.io/badge/VPS-Linux-black?style=for-the-badge&logo=linux" /></a> </p>
+
 If you prefer **full control**, you can deploy Japanese X String Session on your **VPS** or **local machine**.  
 This method gives **maximum stability, customizability, and 24/7 uptime**.
 
