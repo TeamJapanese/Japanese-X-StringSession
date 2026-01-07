@@ -248,7 +248,7 @@ tmux attach
 - Large-scale userbots or advanced Telegram services
 
 
-## 🛡 Support & Updates
+## Support & Updates
 
 Stay connected with **[ᴛᴇᴧᴍ ᴊᴧᴘᴧɴᴇsᴇ](https://github.com/TeamJapanese)** for help, updates, and announcements.  
 
