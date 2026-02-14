@@ -20,7 +20,7 @@
 <a href="https://github.com/TeamJapanese/Japanese-X-StringSession/stargazers"><img src="https://img.shields.io/github/stars/TeamJapanese/Japanese-X-StringSession?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars"/></a>
 <a href="https://github.com/TeamJapanese/Japanese-X-StringSession/network/members"> <img src="https://img.shields.io/github/forks/TeamJapanese/Japanese-X-StringSession?color=black&logo=github&logoColor=black&style=for-the-badge"/></a>
 <a href="https://github.com/TeamJapanese/Japanese-X-StringSession/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License"/></a>
-  <a href="https://github.com/nobitaaaxd/Team-Japanese/Japanese-X-Userbot/commits/itzsandeepshrma"> <img src="https://img.shields.io/github/last-commit/TeamJapanese/Japanese-X-StringSession?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+  <a href="https://github.com/TeamJapanese/Team-Japanese/Japanese-X-StringSession/commits/itzsandeepshrma"> <img src="https://img.shields.io/github/last-commit/TeamJapanese/Japanese-X-StringSession?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://www.python.org/">
   <img src="https://img.shields.io/badge/Written%20in-Python-blue?style=for-the-badge&logo=python" alt="Python"/>
 </a>
