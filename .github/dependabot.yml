@@ -9,19 +9,16 @@ updates:
       time: "00:00"
       timezone: "Asia/Kolkata"
 
-    # Allow large number of PRs
-    open-pull-requests-limit: 50
+    open-pull-requests-limit: 10
 
     labels:
       - "dependencies"
-      - "automated"
-      - "daily"
-      - "mass-update"
+      - "python"
+      - "mongodb"
 
-    # No grouping → separate PR per dependency
-    # This is REQUIRED to reach 50+ PRs/day
+    commit-message:
+      prefix: "chore(deps)"
 
     ignore:
-      # Known breaking libraries
       - dependency-name: "python-telegram-bot"
-      - dependency-name: "sqlalchemy"
+        update-types: ["version-update:semver-major"]
