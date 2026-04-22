@@ -11,5 +11,5 @@ flask-restful>=0.3.0
 requests>=2.31.0
 pytz>=2023.3
 psutil>=5.9.5
-platformdirs>=2.6.2
+platformdirs>=4.9.6
 pymongo
